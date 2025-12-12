@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de la persona Usuaria</title>
+
+    <!-- Enlace al archivo CSS donde se hará la estilización -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Contenedor general para centrar y delimitar visualmente el formulario -->
+    <div class="contenedor">
+
+        <!-- Título principal del formulario -->
+        <h1 id="titulo-formulario">Registro de la persona Usuaria</h1>
+
+        <!-- Formulario principal -->
+        <form id="form-registro">
+
+            <!-- Campo de nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <!-- Campo de apellido -->
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <!-- Campo de correo electrónico -->
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <!-- Campo de contraseña -->
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <!-- Área de texto para descripción personal -->
+            <label for="descripcion">Descripción breve:</label>
+            <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+
+            <!-- Grupo de checkboxes para seleccionar intereses -->
+            <fieldset class="intereses">
+                <legend>Intereses:</legend>
+
+                <!-- Interés: Tecnología -->
+                <label>
+                    <input type="checkbox" name="intereses" value="Tecnología">
+                    Tecnología
+                </label>
+
+                <!-- Interés: Arte -->
+                <label>
+                    <input type="checkbox" name="intereses" value="Arte">
+                    Arte
+                </label>
+
+                <!-- Interés: Deporte -->
+                <label>
+                    <input type="checkbox" name="intereses" value="Deporte">
+                    Deporte
+                </label>
+            </fieldset>
+
+            <!-- Botón para enviar el formulario -->
+            <input type="submit" value="Registrarse" class="btn-enviar">
+        </form>
+    </div>
+
+</body>
+</html>
