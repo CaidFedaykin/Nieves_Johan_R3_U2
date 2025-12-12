@@ -1,13 +1,15 @@
+/* Aplica box-sizing global para evitar que los inputs sobresalgan del contenedor */
 * {
     box-sizing: border-box;
 }
+/* Estilos generales del cuerpo: tipografía, fondo y espaciado */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f2f7;
+    background-color: #FA8072;
     margin: 0;
     padding: 20px;
 }
-
+/* Contenedor principal que centra el formulario */
 .contenedor {
     max-width: 500px;
     margin: auto;
@@ -16,36 +18,36 @@ body {
     border-radius: 10px;
     border: 1px solid #ccc;
 }
-
+/* Estilo del título principal */
 #titulo-formulario {
     text-align: center;
     font-size: 24px;
     color: #333333;
 }
-
+/* Estilos generales de las etiquetas descriptivas */
 label {
     display: block;
     margin-top: 15px;
     font-weight: bold;
     color: #555;
 }
-
+/* Campos de texto, email, password y textarea */
 input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea {
-    width: 100%;
+    width: 100%; /* Mantiene el ancho dentro del contenedor */
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #999;
     border-radius: 5px;
     font-size: 14px;
 }
-
+/* Permite ajustar la altura del textarea */
 textarea {
     resize: vertical;
 }
-
+/* Caja visual para los intereses */
 .intereses {
     margin-top: 20px;
     border: 1px solid #aaa;
@@ -53,17 +55,17 @@ textarea {
     border-radius: 5px;
     background-color: #fafafa;
 }
-
+/* Encabezado del grupo de intereses */
 .intereses legend {
     font-weight: bold;
     color: #333;
 }
-
+/* Cada opción dentro del grupo de intereses */
 .intereses label {
     display: block;
     margin-top: 8px;
 }
-
+/* Botón de envío */
 .btn-enviar {
     width: 100%;
     padding: 12px;
@@ -76,6 +78,7 @@ textarea {
     cursor: pointer;
 }
 
+/* Color del botón al pasar el mouse */
 .btn-enviar:hover {
     background-color: #3b5bdb;
 }
